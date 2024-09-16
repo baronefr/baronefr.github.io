@@ -190,3 +190,22 @@
     }
   }
 }
+
+
+.areabtn {  
+  padding: 0.2em 1em;
+
+  background-color: white;
+  color: black;
+
+  border-style: solid;
+  border-color: black;
+  border: 1px solid $light-gray !important; /* override*/
+
+  font-size: $type-size-6 !important;
+  font-weight: normal !important;
+
+  &:hover {
+    background-color: mix($primary-color, white, 10%);
+  }
+}

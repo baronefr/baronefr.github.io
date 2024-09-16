@@ -28,13 +28,13 @@ author:
   location         : "Padua, Italy"
   employer         : "University of Padua"
   uri              : # URL
-  email            : "yourmail@phd.it" 
+  email            : "francescopio.barone@phd.unipd.it" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=tEuVtaQAAAAJ"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0003-2689-8499"
   semantic         : # URL
   pubmed           : # URL
   researchgate     : # URL
@@ -50,7 +50,7 @@ author:
     #  url: "https://qcsc.dfa.unipd.it"
 
   # use CV pdf instead of markdown page
-  cvpdf: # "/files/paper1.pdf" 
+  cvpdf: "/files/thecv_baronefr.pdf" 
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
@@ -212,18 +212,18 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  #portfolio:
+  #  output: true
+  #  permalink: /:collection/:path/
+  things:
     output: true
     permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
+  #talks:
+  #  output: true
+  #  permalink: /:collection/:path/
 
 
 # Defaults
@@ -248,14 +248,14 @@ defaults:
       layout: single
       author_profile: true
   # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+  #- scope:
+  #    path: ""
+  #    type: teaching
+  #  values:
+  #    layout: single
+  #    author_profile: true
+  #    share: true
+  #    comments: true
   # _publications
   - scope:
       path: ""
@@ -269,20 +269,20 @@ defaults:
   # _portfolio
   - scope:
       path: ""
-      type: portfolio
+      type: things
     values:
       layout: single
       author_profile: true
       share: true
       comment: true
   # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
+  #- scope:
+  #    path: ""
+  #    type: talks
+  #  values:
+  #    layout: talk
+  #    author_profile: true
+  #    share: true
 
 
 # Sass/SCSS
