@@ -14,10 +14,21 @@
     {% endif %}
   </div>
 
-  <div class="author__content">
+  <div class="author__content boxe">
     <h3 class="author__name">{{ author.name }}</h3>
     <!--{% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %} -->
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    <div class="author__mobile">
+      <br>
+      <p class="author__bio">
+        {% if author.location %}
+          <i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}<br>
+        {% endif %}
+        {% if author.employer %}
+          <i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}
+        {% endif %}
+      </p>
+    </div>
   </div>
 
   {% if author.badges %}
@@ -46,14 +57,14 @@
   {% endif %}
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
+    <button class="btn btn--colored-inverse">Follow</button>
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
-        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i><strong>{{ author.location }}</strong></li>
+        <li class="author__desktop"><i class="fa-solid fa-location-dot ai-fw icon-pad-right" aria-hidden="true"></i><strong>{{ author.location }}</strong></li>
       {% endif %}
       {% if author.employer %}
-        <li class="author__desktop"><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i><strong>{{ author.employer }}</strong></li>
+        <li class="author__desktop"><i class="fa fa-solid fa-building-columns ai-fw icon-pad-right" aria-hidden="true"></i><strong>{{ author.employer }}</strong></li>
       {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
@@ -67,7 +78,7 @@
         <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw icon-pad-right"></i>arXiv</a></li>
       {% endif %}      
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
+        <li><a href="{{ author.googlescholar }}"><i class="fa-brands fa-google ai-fw icon-pad-right"></i>Google Scholar</a></li>
       {% endif %}
       {% if author.semantic %}
         <li><a href="{{ author.semantic }}"><i class="ai ai-semantic-scholar ai-fw icon-pad-right"></i>Semantic Scholar</a></li>
@@ -76,7 +87,7 @@
         <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw icon-pad-right"></i>Impactstory</a></li>
       {% endif %}
       {% if author.orcid %}
-        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
+        <li><a href="{{ author.orcid }}"><i class="fa-brands fa-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
       {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed ai-fw icon-pad-right"></i>PubMed</a></li>
@@ -134,7 +145,7 @@
         <li><a href="https://lastfm.com/user/{{ author.lastfm }}"><i class="fab fa-fw fa-lastfm icon-pad-right" aria-hidden="true"></i>Last.fm</a></li>
       {% endif %}      
       {% if author.linkedin %}
-        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fa-brands fa-linkedin-in ai-fw icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
       {% endif %}      
       {% if author.mastodon %}
         <li><a href="{{ author.mastodon }}"><i class="fab fa-fw fa-mastodon icon-pad-right" aria-hidden="true"></i>Mastodon</a></li>

@@ -9,14 +9,15 @@
 .sidebar {
 
   @include clearfix();
-  margin-bottom: 1em;
-
+  margin-bottom: 2em;
+  
   @media screen and (min-width: $large) {
-    width: 20% !important;
+    width: auto !important;
     height: 100vh;
+    margin-left: 10px;
     overflow-y: auto;               // Add scrollbar if the sidebar is too long
-    position: fixed;
-    padding-top: $masthead-height;
+    //position: fixed;
+    //padding-top: $masthead-height;
   }
 
   @include breakpoint($large) {
@@ -54,7 +55,7 @@
     width: 100%;
   }
 
-  @media screen and (max-width: $large) {
+  @media all and (max-width: $large) {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -86,7 +87,7 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
+  width: 100px;
   // set width only, for non-square avatars
   // height: 36px;
 
@@ -127,7 +128,7 @@
 
 .author__content {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle;
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
@@ -151,12 +152,22 @@
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
+  @media screen and (max-width: $large) {
+    font-size: $type-size-4;
+  }
 }
 
 .sidebar .author__desktop {
   display: none;
   @media screen and (min-width: $large) {
     display: block;
+  }
+}
+
+.sidebar .author__mobile {
+  display: block;
+  @media screen and (min-width: $large) {
+    display: none;
   }
 }
 
@@ -284,7 +295,7 @@
 
   a {
     display: block;
-    margin-bottom: 5px;
+    margin: 5px 0px;
     padding-right: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -297,4 +308,15 @@
   }
 
   //z-index: 400 !important;
+}
+
+.sidebar .boxe {
+  //@media screen and (min-width: $large) {
+  //  color: #fff;
+  //  background-color: $primary-color;
+  //  padding: 0px 10px;
+  //  padding-top: 5px;
+  //  padding-bottom: 2px;
+  //  margin-bottom: 1em;
+  //}
 }

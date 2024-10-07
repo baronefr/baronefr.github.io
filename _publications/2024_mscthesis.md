@@ -7,7 +7,7 @@ date: 2024-04-19
 venue: 'Thesis UniPd'
 paperurl: 'https://hdl.handle.net/20.500.12608/65146'
 codelink: 'https://github.com/baronefr/parity-floquet'
-citation: 'Francesco Pio Barone, 2024, Thesis UniPd'
+citation: 'F.P. Barone, 2024, Thesis UniPd'
 ---
 
 

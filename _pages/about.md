@@ -1,15 +1,16 @@
 ---
 permalink: /
-title: "my personal website"
+title: "hello there"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Random walking between mountain biking, piano playing, and quantum physics.
+I am a PhD student at University of Padua. 
+I work in the Quantum Information and Matter group of the Physics department.
 
-🔍 **my interest area**: 
+🔍 **my interest area**:
 <button class='btn areabtn'>quantum algorithms</button>,
 <button class='btn areabtn'>quantum error correction</button>,
 <button class='btn areabtn'>tensor networks</button>

@@ -7,7 +7,7 @@ date: 2024-03-19
 venue: 'New Journal of Physics'
 paperurl: 'https://iopscience.iop.org/article/10.1088/1367-2630/ad313e'
 codelink: 'https://github.com/CERN-IT-INNOVATION/colder'
-citation: 'Francesco Pio Barone et al, 2024, New J. Phys. 26 033031'
+citation: 'F.P. Barone et al, 2024, New J. Phys. 26 033031'
 figurepreview: '/images/previews/2024_counterdiabatic.png'
 ---
 
