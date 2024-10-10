@@ -139,6 +139,11 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  @media screen and (max-width: $large) {
+    padding-left: 10px;
+    padding-right: 2px;
+  }
 }
 
 .author__name {
@@ -194,7 +199,7 @@
 .author__urls-wrapper {
   position: relative;
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: bottom;
   font-family: $sans-serif;
   cursor: pointer;
 
