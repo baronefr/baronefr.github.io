@@ -9,6 +9,6 @@ permalink: /things/
 This section is not intended to show any research/work content. It is instead reserved for some personal projects or activities. 
 If it appears empty, that is because I am lazy and do not want to fill it with the content I was working on before this website went live.
 
-{% for post in site.things %}
+{% for post in site.things reversed %}
   {% include archive-single.html %}
 {% endfor %}

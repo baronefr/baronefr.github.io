@@ -2,7 +2,8 @@
 title: "UniPd thesis template"
 excerpt: "LaTeX thesis template for University of Padua."
 collection: things
-codelink: 'https://github.com/baronefr/unipd-thesis-modern'
+gitlink: 'https://github.com/baronefr/unipd-thesis-modern'
+date: 2024-09-16
 ---
 
 <br>
