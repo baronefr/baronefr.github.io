@@ -54,8 +54,11 @@ layout: default
           {% if page.paperurl %}
             <a href="{{page.paperurl}}" class="btn">{{ site.data.ui-text[site.locale].paper_link_label | default: "Go to the paper" }}</a>
           {% endif %}
+          {% if page.gitlink %}
+            <a href="{{page.gitlink}}" class="btn btn--codelink"><i class="fa-brands fa-github ai-fw icon-pad-right"></i> {{ site.data.ui-text[site.locale].git_link_label | default: "Code" }}</a>
+          {% endif %}
           {% if page.codelink %}
-            <a href="{{page.codelink}}" class="btn btn--codelink">{{ site.data.ui-text[site.locale].code_link_label | default: "Code" }}</a>
+            <a href="{{page.codelink}}" class="btn btn--codelink"><i class="fa-solid fa-file-code ai-fw icon-pad-right"></i> {{ site.data.ui-text[site.locale].code_link_label | default: "Code" }}</a>
           {% endif %}
           {% if page.slidesurl %}
             <a href="{{page.slidesurl}}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Ext link" }}</a>

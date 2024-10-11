@@ -12,6 +12,7 @@ en: &DEFAULT_EN
   ext_link_label             : "Link"
   paper_link_label           : "Go to the paper"
   code_link_label            : "Code"
+  git_link_label             : "Code"
   less_than                  : "less than"
   minute_read                : "minute read"
   share_on_label             : "Share on"

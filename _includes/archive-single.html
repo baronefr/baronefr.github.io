@@ -38,23 +38,26 @@
       {% endif %}
     </h2>
     
-
     {% if post.collection == 'teaching' %}
       <p class="archive__item-excerpt"> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% elsif post.collection == 'publications' %}
       <p class="archive__item-excerpt">
         {% if post.preprint %}Preprint in{% else %}Published in{% endif %}
         {% if post.paperurl %}
-          <a href="{{post.paperurl}}" class="btn smallbtn"><i>{{ post.venue }}</i></a>
+          <a href="{{post.paperurl}}" class="btn smallbtn">{{ post.venue }}</a>
         {% else %}
           <i>{{ post.venue }}</i>
         {% endif %}
+        {% if post.gitlink %}
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+          <a href="{{post.gitlink}}" class="btn smallbtn smallbtn--codelink"><i class="fa-brands fa-github ai-fw icon-pad-right"></i> {{ site.data.ui-text[site.locale].git_link_label | default: "Code" }}</a>
+        {% endif %}
         {% if post.codelink %}
           <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-          <a href="{{post.codelink}}" class="btn smallbtn smallbtn--codelink"><i>{{ site.data.ui-text[site.locale].code_link_label | default: "Code" }}</i></a>
+          <a href="{{post.codelink}}" class="btn smallbtn smallbtn--codelink"><i class="fa-solid fa-file-code ai-fw icon-pad-right"></i> {{ site.data.ui-text[site.locale].code_link_label | default: "Code" }}</a>
         {% endif %}
         {% if post.citation %}
-          <br>Recommended citation: {{ post.citation }}
+          <br>Recommended citation: <i>{{ post.citation }}</i>
         {% endif %}
       </p>
     {% elsif post.date %}

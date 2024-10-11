@@ -112,8 +112,8 @@ $masthead-link-color-hover  : $masthead-text-color;
 $masthead-background        : #fff;
 
 /* hovering */
-$pagetitle-underline        : mix($bluesky-color, $masthead-background, 20%);
-$masthead-hover-underline   : mix($bluesky-color, $masthead-background, 30%);
+$pagetitle-underline        : mix($primary-color, $masthead-background, 20%);
+$masthead-hover-underline   : mix($primary-color, $masthead-background, 30%);//TODO $bluesky-color
 $archive-title-hover-underline : mix(#fff, $gray, 65%);
 
 /* sidebar elements */
