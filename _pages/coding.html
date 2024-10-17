@@ -1,0 +1,14 @@
+---
+layout: archive
+title: "coding"
+permalink: /coding/
+---
+
+{% include base_path %}
+
+This section is reserved for some personal projects, unrelated to research/work content. 
+It appears kind of empty to me, but I am lazy and do not want to fill it with the content I was working on before this website went live.
+
+{% for post in site.coding reversed %}
+  {% include archive-single.html %}
+{% endfor %}

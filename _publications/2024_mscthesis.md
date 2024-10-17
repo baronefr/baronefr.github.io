@@ -8,6 +8,7 @@ venue: 'Thesis UniPd'
 paperurl: 'https://hdl.handle.net/20.500.12608/65146'
 gitlink: 'https://github.com/baronefr/parity-floquet'
 citation: 'F.P. Barone, 2024, Thesis UniPd'
+figurepreview: '/images/previews/2024_mscthesis.png'
 ---
 
 

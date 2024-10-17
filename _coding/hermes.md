@@ -1,14 +1,13 @@
 ---
 title: "Hermes"
 excerpt: "Telegram bot for messages, task notifications & system management."
-collection: things
+collection: coding
 gitlink: 'https://github.com/baronefr/hermes'
 date: 2024-10-10
 ---
 
 <br>
-<img src='https://raw.githubusercontent.com/baronefr/hermes/master/img/cover.png' style='width:100%;max-width:700px;display:block;margin-left:auto; margin-right:auto;'>
-
+<img src='https://raw.githubusercontent.com/baronefr/hermes/master/img/cover.png' class='page__image-large'>
 
 ## What is Hermes?
 

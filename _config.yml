@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 title                    : "baronefr"
-title_separator          : "/"
+title_separator          : "//"
 name                     : &name "Francesco Pio Barone"
-description              : &description "PhD candidate"
+description              : &description "PhD student"
 url                      : https://baronefr.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "baronefr/baronefr.github.io"
@@ -24,9 +24,9 @@ author:
   avatar           : "profile.png"
   name             : "Francesco Pio Barone"
   pronouns         : # example: "she/her"  
-  bio              : "PhD candidate in Quantum Physics"
-  location         : "Padua, Italy"
-  employer         : "University of Padua"
+  bio              : "PhD student in Quantum Physics"
+  location         : "Padova, Italy"
+  employer         : "University of Padova"
   uri              : # URL
   email            : "francescopio.barone@phd.unipd.it" 
 
@@ -50,7 +50,7 @@ author:
     #  url: "https://qcsc.dfa.unipd.it"
 
   # use CV pdf instead of markdown page
-  cvpdf: "/files/thecv_baronefr.pdf" 
+  cvpdf: "/files/baronefr_cv.pdf" 
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
@@ -218,7 +218,7 @@ collections:
   #portfolio:
   #  output: true
   #  permalink: /:collection/:path/
-  things:
+  coding:
     output: true
     permalink: /:collection/:path/
   #talks:
@@ -269,7 +269,7 @@ defaults:
   # _portfolio
   - scope:
       path: ""
-      type: things
+      type: coding
     values:
       layout: single
       author_profile: false

@@ -11,8 +11,8 @@ main:
   - title: "publications"
     url: /publications/
 
-#  - title: "posts"
-#  //  url: /posts/
+  - title: "posts"
+    url: /posts/
   
-  - title: "things"
-    url: /things/
+  - title: "coding"
+    url: /coding/
