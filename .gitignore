@@ -13,3 +13,4 @@ package-lock.json
 
 # customization development
 devnotes.md
+.vscode/

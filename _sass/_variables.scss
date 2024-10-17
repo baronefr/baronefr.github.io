@@ -68,11 +68,14 @@ $code-background-color-dark : $light-gray;
 $text-color                 : #000;
 $border-color               : $light-gray;
 
-$primary-color              : #024b99;
+$primary-color              : #024b99; // blue: #024b99, yellow: #e69900, red: #c40000, pantone: #9b0014
 $success-color              : #62c462;
 $warning-color              : #f89406;
 $danger-color               : #ee5f5b;
 $info-color                 : #52adc8;
+
+$page-background-baseline   : mix(#000, $primary-color, 40%); // dark blue: #032c59
+$page-background-color      : linear-gradient(0deg, $page-background-baseline 0%, rgba(0,0,0,1) 100%);
 
 /* brands */
 $behance-color              : #1769FF;
@@ -110,10 +113,11 @@ $masthead-text-color        : #222;
 $masthead-link-color        : $masthead-text-color;
 $masthead-link-color-hover  : $masthead-text-color;
 $masthead-background        : #fff;
+$masthead-line-color        : $primary-color;
 
 /* hovering */
 $pagetitle-underline        : mix($primary-color, $masthead-background, 20%);
-$masthead-hover-underline   : mix($primary-color, $masthead-background, 30%);//TODO $bluesky-color
+$masthead-hover-underline   : mix($primary-color, $masthead-background, 30%);
 $archive-title-hover-underline : mix(#fff, $gray, 65%);
 
 /* sidebar elements */
