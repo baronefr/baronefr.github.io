@@ -8,7 +8,8 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "baronefr"
+title                    : "Barone Francesco"
+masthead_title           : "./baronefr"
 title_separator          : "//"
 name                     : &name "Francesco Pio Barone"
 description              : &description "PhD student"
